@@ -1,0 +1,21 @@
+
+ <div class="form-group">
+   <div [formGroup]="bugInfoForm">
+     <label for="impact">Impact</label>
+<select class="form-control" id="impact" formControlName="impact">
+        <option selected value="">select Impact</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    
+  </div>
+    </div>
+      <div class="form-group">
+          <div [formGroup]="bugInfoForm">
+            <label for="detailExplanation">Detailed Explanation of bug</label>
+              <textarea class="form-control" formControlName="detailExplanation" id="detailExplanation" rows="3"></textarea>
+          
+          </div>
+      </div>
+          

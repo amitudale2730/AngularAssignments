@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<app-header></app-header>
+<form [formGroup]="bugInfoForm" (ngSubmit)="onSubmit(bugInfoForm.value)">
+<app-personal-info [bugInfoForm]="bugInfoForm"></app-personal-info>
+<app-bug-info [bugInfoForm]="bugInfoForm"></app-bug-info>
+<app-footer></app-footer>
+</form>
+</div>
+
+
+<router-outlet></router-outlet>

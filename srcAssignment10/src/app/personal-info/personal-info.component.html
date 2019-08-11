@@ -1,0 +1,46 @@
+
+    <h3>Your Name</h3>
+    <div class="form-row">
+      <div class="col">
+          <div [formGroup]="bugInfoForm">
+        
+        <input type="text" class="form-control" id="fname" formControlName="fname">
+        <small id="firstnameHelpBlock" class="form-text text-muted">
+                First name
+        </small>
+      </div>
+      </div>
+      <div class="col">
+          <div [formGroup]="bugInfoForm">          
+        <input type="text" class="form-control" id="lname" formControlName="lname">
+        <small id="lastnameHelpBlock" class="form-text text-muted">
+                Last name
+        </small>
+      </div>
+      </div>
+    </div>
+    <div class="form-row">
+    <div class="col">
+        <div [formGroup]="bugInfoForm">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email"  aria-describedby="emailHelp">
+        </div>
+    </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <div [formGroup]="bugInfoForm">
+                <label for="email">Date and time you first notice this bug*</label>
+                <!-- <input type="email" class="form-control" id="email" formControlName="email"  aria-describedby="emailHelp"> -->
+                <div class="row">
+                    <div class="col-xs-12 col-12 col-md-4 form-group">
+                        <input type="text"
+                               placeholder="Datepicker"
+                               class="form-control"
+                               bsDatepicker
+                               [bsConfig]="{ isAnimated: true }">
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
